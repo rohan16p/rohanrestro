@@ -1,11 +1,193 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
 }
 
-.Navbar {
-  width: 100%;
-  height: 70px;
-  border: 1px solid red;
+/* Top bar */
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 8px 8%;
+    font-size: 12px;
+}
+
+.top-bar span {
+    margin-right: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+nav h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+}
+
+.red{
+    color: red;
+}
+
+.nav-links a {
+    color: black;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.book-btn {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 12px;
+}
+
+/* Hero section */
+.hero {
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero img {
+    width: 100%;
+    /* height: 900px; */
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+
+.hero h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 46px;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.hero p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.buttons button {
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.white-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Menu section */
+.menu {
+    text-align: center;
+    padding: 25px 8%;
+}
+
+.menu h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-card {
+    width: 25%;
+    padding: 18px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.menu-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    font-size: 16px;
+}
+
+.menu-card p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.menu-card button {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 12px;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .menu-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-card {
+        width: 45%;
+    }
 }
