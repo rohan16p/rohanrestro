@@ -1,92 +1,313 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodHub</title>
+    <title>FoodHub Restaurant</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Top bar -->
     <div class="top-bar">
-        <span> (123) 456 - 7890</span>
-        <span> yummy@foodhub.com</span>
-    </div>
-
-    <!-- Navigation bar -->
-    <nav>
-        <h2> Food <span class="red">Hub</span></h2>
-
-        <div class="nav-links">
-            <a>Home</a>
-            <a>About</a>
-            <a>Menu</a>
-            <a>Pages</a>
-            <a>Contact</a>
+        <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i> 123-456-7890</span>
+            <span><i class="fa-solid fa-envelope"></i> foodhub@gmail.com</span>
         </div>
 
-        <button class="book-btn">Book A Table</button>
-    </nav>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Food<span>Hub</span></a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-book">Book A Table</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero section -->
-    <section class="hero">
-
-        <img src="./assets/image 110.png" alt="Fresh food arranged on a table">
+    <section class="hero" id="home">
+        <img src="./assets/image 110.png" alt="Fresh food" class="hero-image">
 
         <div class="hero-content">
             <h1>Best food for<br>your taste</h1>
-
             <p>
                 Discover delectable cuisine and unforgettable moments
-                <br>in our welcoming, culinary haven.
+                in our welcoming, culinary haven.
             </p>
 
             <div class="buttons">
-                <button class="red-btn">Book A Table</button>
-                <button class="red-btn">Explore Menu</button>
+                <a href="#contact" class="red-btn">Book A Table</a>
+                <a href="#menu" class="outline-btn">Explore Menu</a>
             </div>
         </div>
     </section>
 
     <!-- Menu section -->
-    <section class="menu">
+    <section class="menu section" id="menu">
         <h2>Browse Our Menu</h2>
+        <p class="section-intro">Discover something delicious for every craving.</p>
 
-        <div class="menu-container">
-
-            <div class="menu-card">
-                <img src="./assets/icon (3).png" alt="Breakfast food">
+        <div class="menu-container horizontal-scroll">
+            <article class="menu-card">
+                <img src="./assets/icon (3).png" alt="Breakfast">
                 <h3>Breakfast</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <button>Explore Menu</button>
-            </div>
+                <p>Start your day with fresh and delicious breakfast favourites.</p>
+                <a href="#contact">Explore Menu →</a>
+            </article>
 
-            <div class="menu-card">
+            <article class="menu-card">
                 <img src="./assets/icon.png" alt="Main dishes">
                 <h3>Main Dishes</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <button>Explore Menu</button>
-            </div>
+                <p>Enjoy satisfying meals prepared with fresh ingredients.</p>
+                <a href="#contact">Explore Menu →</a>
+            </article>
 
-            <div class="menu-card">
-                <img src="./assets/icon (1).png" alt="Drinks in a glass">
+            <article class="menu-card">
+                <img src="./assets/icon (1).png" alt="Drinks">
                 <h3>Drinks</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <button>Explore Menu</button>
-            </div>
+                <p>Refresh yourself with our selection of delicious drinks.</p>
+                <a href="#contact">Explore Menu →</a>
+            </article>
 
-            <div class="menu-card">
-                <img src="./assets/icon (2).png" alt="Dessert cake">
+            <article class="menu-card">
+                <img src="./assets/icon (2).png" alt="Desserts">
                 <h3>Desserts</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <button>Explore Menu</button>
-            </div>
-
+                <p>Complete your meal with something sweet and delightful.</p>
+                <a href="#contact">Explore Menu →</a>
+            </article>
         </div>
     </section>
 
+    <!-- About section -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="./assets/about-food.png" alt="Fresh restaurant food">
+        </div>
+
+        <div class="about-content">
+            <span class="eyebrow">ABOUT FOODHUB</span>
+            <h2>We provide healthy food for your family.</h2>
+
+            <p>
+                Our restaurant serves delicious meals made with fresh
+                ingredients. We believe good food brings people together.
+            </p>
+
+            <p>
+                Visit us to enjoy tasty dishes, friendly service,
+                and a comfortable dining experience.
+            </p>
+
+            <a href="#contact" class="dark-btn">More About Us</a>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services section" id="services">
+        <h2>We also offer unique services for your events</h2>
+        <p class="section-intro">Make your special occasions even more memorable.</p>
+
+        <div class="service-container horizontal-scroll">
+            <article class="service-card">
+                <img src="./assets/caterings.png" alt="Catering service">
+                <div class="card-content">
+                    <h3>Catering</h3>
+                    <p>Fresh and tasty food for your special events.</p>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="./assets/birthday.png" alt="Birthday celebration">
+                <div class="card-content">
+                    <h3>Birthdays</h3>
+                    <p>Make your birthday celebration more memorable.</p>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="./assets/wedding.png" alt="Wedding celebration">
+                <div class="card-content">
+                    <h3>Weddings</h3>
+                    <p>Enjoy delicious food on your special day.</p>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="./assets/event.png" alt="Special event">
+                <div class="card-content">
+                    <h3>Events</h3>
+                    <p>Food services for gatherings and celebrations.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Delivery section -->
+    <section class="delivery section">
+        <div class="delivery-images">
+            <img src="./assets/chef.png" alt="Chef preparing food">
+            <img src="./assets/healthy-food.png" alt="Healthy meal">
+            <img src="./assets/grilled-food.png" alt="Grilled food">
+        </div>
+
+        <div class="delivery-content">
+            <span class="eyebrow">EASY AND CONVENIENT</span>
+            <h2>Fast and reliable food delivery</h2>
+            <p>
+                Enjoy your favourite meals at home with our convenient
+                food delivery service.
+            </p>
+
+            <div class="delivery-feature">
+                <i class="fa-solid fa-clock"></i>
+                <span>Fast delivery service</span>
+            </div>
+
+            <div class="delivery-feature">
+                <i class="fa-solid fa-tag"></i>
+                <span>Affordable prices</span>
+            </div>
+
+            <div class="delivery-feature">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Easy ordering experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews section -->
+    <section class="reviews section">
+        <h2>What our customers say</h2>
+        <p class="section-intro">See what makes dining with us special.</p>
+
+        <div class="review-container horizontal-scroll">
+            <article class="review-card">
+                <h3>"The best restaurant"</h3>
+                <p>The food was delicious and the service was excellent. I would love to visit again.</p>
+                <h4>Customer One</h4>
+            </article>
+
+            <article class="review-card">
+                <h3>"Amazing experience"</h3>
+                <p>The atmosphere was comfortable and the food was fresh. Highly recommended.</p>
+                <h4>Customer Two</h4>
+            </article>
+
+            <article class="review-card">
+                <h3>"Really delicious"</h3>
+                <p>Great taste, friendly staff, and good value for money.</p>
+                <h4>Customer Three</h4>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog section -->
+    <section class="blog section" id="blog">
+        <div class="blog-heading">
+            <div>
+                <span class="eyebrow">FROM OUR KITCHEN</span>
+                <h2>Our latest food news</h2>
+            </div>
+            <a href="#blog" class="dark-btn">Read All Articles</a>
+        </div>
+
+        <div class="blog-container horizontal-scroll">
+            <article class="blog-card">
+                <img src="./assets/burger.png" alt="Fresh burger">
+                <div class="blog-text">
+                    <p class="blog-date">January 15, 2026</p>
+                    <h3>How to make a delicious burger at home</h3>
+                    <p>Discover simple ways to prepare tasty meals.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="./assets/fries.png" alt="Crispy French fries">
+                <div class="blog-text">
+                    <p class="blog-date">January 18, 2026</p>
+                    <h3>Tips for preparing crispy French fries</h3>
+                    <p>Learn how to make your favourite snacks.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="./assets/chicken.png" alt="Chicken dish">
+                <div class="blog-text">
+                    <p class="blog-date">January 20, 2026</p>
+                    <h3>Enjoy a delicious chicken meal</h3>
+                    <p>Try a tasty dish prepared with fresh ingredients.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="./assets/cake.png" alt="Delicious cake">
+                <div class="blog-text">
+                    <p class="blog-date">January 22, 2026</p>
+                    <h3>Sweet desserts for every occasion</h3>
+                    <p>Finish your meal with something sweet.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="#home" class="logo">Food<span>Hub</span></a>
+                <p>Bringing people together with delicious food and friendly service.</p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Pages</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#services">Services</a>
+                <a href="#blog">Blog</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Restaurant Street</p>
+                <p>123-456-7890</p>
+                <p>foodhub@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2026 FoodHub. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
-
-    
