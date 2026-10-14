@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | FoodHub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html#home" class="logo">
+                Food<span>Hub</span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon"
+                   aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li>
+                    <a href="index.html#contact" class="nav-book">
+                        Book A Table
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <span class="eyebrow">FRESH • TASTY • DELICIOUS</span>
+        <h1>Our Delicious Menu</h1>
+        <p>Explore our favourites, prepared with care and served fresh.</p>
+    </section>
+
+    <!-- Breakfast -->
+    <section class="food-section" id="breakfast">
+        <h2>Breakfast</h2>
+        <p class="food-intro">A delicious start to your day.</p>
+
+        <div class="food-container">
+
+            <article class="food-card">
+                <img src="./assets/breakfast.png" alt="Breakfast">
+                <div class="food-info">
+                    <h3>Classic Breakfast</h3>
+                    <p>A satisfying breakfast to start your morning.</p>
+                    <span class="price">₹149</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/about-food.png" alt="Fresh breakfast meal">
+                <div class="food-info">
+                    <h3>Morning Special</h3>
+                    <p>A fresh and tasty meal to start your day.</p>
+                    <span class="price">₹129</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/healthy-food.png" alt="Healthy meal">
+                <div class="food-info">
+                    <h3>Healthy Breakfast</h3>
+                    <p>A light meal prepared with fresh ingredients.</p>
+                    <span class="price">₹99</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Main Dishes -->
+    <section class="food-section alternate" id="main-dishes">
+        <h2>Main Dishes</h2>
+        <p class="food-intro">Delicious meals for every appetite.</p>
+
+        <div class="food-container">
+
+            <article class="food-card">
+                <img src="./assets/burger.png" alt="Classic burger">
+                <div class="food-info">
+                    <h3>Classic Burger</h3>
+                    <p>A juicy burger with fresh and tasty ingredients.</p>
+                    <span class="price">₹199</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/chicken.png" alt="Chicken meal">
+                <div class="food-info">
+                    <h3>Chicken Special</h3>
+                    <p>A flavourful chicken dish for a hearty meal.</p>
+                    <span class="price">₹249</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/grilled-food.png" alt="Grilled food">
+                <div class="food-info">
+                    <h3>Grilled Special</h3>
+                    <p>Enjoy a delicious grilled meal prepared fresh.</p>
+                    <span class="price">₹229</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Drinks -->
+    <section class="food-section" id="drinks">
+        <h2>Drinks</h2>
+        <p class="food-intro">Refresh yourself with every sip.</p>
+
+        <div class="food-container">
+
+            <article class="food-card">
+                <img src="./assets/healthy-food.png" alt="Refreshing drink">
+                <div class="food-info">
+                    <h3>Fresh Refreshment</h3>
+                    <p>A refreshing drink to enjoy with your meal.</p>
+                    <span class="price">₹79</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/special.png" alt="Special drink">
+                <div class="food-info">
+                    <h3>House Special</h3>
+                    <p>A refreshing choice for any time of day.</p>
+                    <span class="price">₹89</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/drink.png" alt="Drink selection">
+                <div class="food-info">
+                    <h3>Cool Favourite</h3>
+                    <p>A tasty refreshment to complement your meal.</p>
+                    <span class="price">₹99</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="food-section alternate" id="desserts">
+        <h2>Desserts</h2>
+        <p class="food-intro">Finish your meal with something sweet.</p>
+
+        <div class="food-container">
+
+            <article class="food-card">
+                <img src="./assets/cake.png" alt="Chocolate cake">
+                <div class="food-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>A rich and delightful chocolate dessert.</p>
+                    <span class="price">₹119</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/sweet.png" alt="Sweet dessert">
+                <div class="food-info">
+                    <h3>Sweet Treat</h3>
+                    <p>A sweet treat to satisfy your cravings.</p>
+                    <span class="price">₹89</span>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <img src="./assets/dessert.png" alt="Chef's dessert">
+                <div class="food-info">
+                    <h3>Chef's Dessert</h3>
+                    <p>A sweet finish to your favourite meal.</p>
+                    <span class="price">₹139</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Order Through App -->
+    <section class="order-app">
+
+        <div class="app-images">
+
+            <img src="./assets/burger.png"
+                 alt="Delicious burger"
+                 class="app-food app-food-one">
+
+            <img src="./assets/healthy-food.png"
+                 alt="Fresh meal"
+                 class="app-food app-food-two">
+
+            <div class="phone-mockup">
+
+                <div class="phone-top"></div>
+
+                <h3>Food<span>Hub</span></h3>
+                <p>Delicious food, delivered.</p>
+
+                <img src="./assets/chicken.png"
+                     alt="Chicken special">
+
+                <div class="phone-item">
+                    <div>
+                        <strong>Chicken Special</strong>
+                        <p>Fresh & delicious</p>
+                    </div>
+                    <span>₹249</span>
+                </div>
+
+                <a href="index.html#contact" class="phone-order">
+                    Order Now
+                </a>
+
+            </div>
+        </div>
+
+        <div class="app-content">
+
+            <span class="eyebrow">FOODHUB MOBILE APP</span>
+
+            <h2>Order your favourites through our app.</h2>
+
+            <p>
+                Your favourite meals are just a few taps away.
+                Explore delicious food, choose your favourites,
+                and enjoy a convenient ordering experience.
+            </p>
+
+            <div class="app-features">
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Easy food ordering
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Browse our delicious menu
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Convenient ordering experience
+                </p>
+            </div>
+
+            <div class="app-buttons">
+
+                <a href="#" class="app-store"
+                   aria-label="Download on the App Store">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>
+                        <small>Download on the</small>
+                        <strong>App Store</strong>
+                    </span>
+                </a>
+
+                <a href="#" class="app-store"
+                   aria-label="Get it on Google Play">
+                    <i class="fa-brands fa-google-play"></i>
+                    <span>
+                        <small>GET IT ON</small>
+                        <strong>Google Play</strong>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="menu-cta">
+        <h2>Craving something delicious?</h2>
+        <p>Visit FoodHub and make your next meal special.</p>
+        <a href="index.html#contact" class="red-btn">
+            Book A Table
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <a href="index.html#home" class="logo">
+                    Food<span>Hub</span>
+                </a>
+
+                <p>
+                    Bringing people together with delicious food
+                    and friendly service.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Pages</h3>
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#blog">Blog</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Restaurant Street</p>
+                <p>123-456-7890</p>
+                <p>foodhub@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2026 FoodHub. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
